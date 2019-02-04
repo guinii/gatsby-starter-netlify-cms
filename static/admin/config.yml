@@ -4,6 +4,7 @@ backend:
 
 media_folder: static/img
 public_folder: /img
+publish_mode: editorial_workflow
 
 collections:
   - name: "blog"
@@ -25,7 +26,6 @@ collections:
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
-        publish_mode: editorial_workflow
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
